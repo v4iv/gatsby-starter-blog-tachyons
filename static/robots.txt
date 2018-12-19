@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: */admin/
+Disallow: */tags/
+Disallow: */success/
+
+sitemap: https://gatsby-starter-blog-tachyons.netlify.com/sitemap.xml
