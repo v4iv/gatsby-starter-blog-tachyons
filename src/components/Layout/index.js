@@ -1,7 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import 'tachyons-sass/tachyons.scss'
-import config from '../../../data/config'
+import config from '../../../config'
 import Footer from '../Footer'
 import Header from '../Header'
 

@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import {Link} from 'gatsby'
 import _ from 'lodash'
 import Img from 'gatsby-image'
+import './styles.sass'
 import Content from '../Content'
 
 const ArticleTemplate = ({

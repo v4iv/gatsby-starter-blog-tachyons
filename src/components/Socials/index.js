@@ -1,5 +1,5 @@
 import React from 'react'
-import config from '../../../data/config'
+import config from '../../../config'
 
 const Socials = () => (
   <div className='db dtc-ns black-70 tc tr-ns v-mid'>

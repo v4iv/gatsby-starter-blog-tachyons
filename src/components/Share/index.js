@@ -6,7 +6,7 @@ import {
   RedditShareButton,
   TwitterShareButton,
 } from 'react-share'
-import config from '../../../data/config'
+import config from '../../../config'
 
 class Share extends Component {
   render () {

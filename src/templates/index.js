@@ -3,7 +3,7 @@ import Helmet from 'react-helmet'
 import {Link} from 'gatsby'
 
 import ArticleList from '../components/ArticleList'
-import config from '../../data/config'
+import config from '../../config'
 import Layout from '../components/Layout'
 
 const PaginationLink = props => {
