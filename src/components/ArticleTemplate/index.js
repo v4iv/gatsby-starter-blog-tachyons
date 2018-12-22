@@ -48,7 +48,6 @@ const ArticleTemplate = ({
       <div className='ph3 ph4-m ph5-l'>
         <PostContent content={content} className={'measure db center f5 f4-ns lh-copy'} />
       </div>
-      {console.log(cover)}
     </article>
   )
 }
@@ -56,6 +55,7 @@ const ArticleTemplate = ({
 ArticleTemplate.propTypes = {
   content: PropTypes.node.isRequired,
   date: PropTypes.string,
+  cover: PropTypes.object,
   contentComponent: PropTypes.func,
   title: PropTypes.string,
 }

@@ -4,6 +4,7 @@ import {Link} from 'gatsby'
 
 import ArticleList from '../components/ArticleList'
 import config from '../../data/config'
+import Layout from '../components/Layout'
 
 const PaginationLink = props => {
   if (!props.test) {
@@ -36,7 +37,7 @@ export default class IndexPage extends Component {
     }
 
     return (
-      <div>
+      <Layout>
         <Helmet>
           <title>Home | The Leaky Cauldron Blog</title>
           {/* Schema.org tags */}
@@ -59,7 +60,7 @@ export default class IndexPage extends Component {
             />
           </div>
         </div>
-      </div>
+      </Layout>
     )
   }
 }

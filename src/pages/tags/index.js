@@ -2,21 +2,22 @@ import React from 'react'
 import { kebabCase } from 'lodash'
 import Helmet from 'react-helmet'
 import { Link, graphql } from 'gatsby'
+import Layout from '../../components/Layout'
 
 const TagsPage = ({
   data: { allMarkdownRemark: { group }, site: { siteMetadata: { title } } },
 }) => (
-  <div>
+  <Layout>
     <Helmet title={`Tags | ${title}`} />
     <section className='mw7 center avenir'>
-      <section className='pa3'>
-        <h3 className='if3 f2-m f-subheadline-l measure lh-title fw1 mt0 mb0'>Tags</h3>
-      </section>
-      <ul className='list ph3 ph5-ns pv4'>
+      <header className='tc'>
+        <h1 className='f1 code mb1 fw1 dib tracked-tight'>Tags</h1>
+      </header>
+      <ul className='list ph3 ph5-ns pv4 tc'>
         {group.map(tag => (
           <li key={tag.fieldValue} className='dib mr1 mb2'>
             <Link
-              className='f6 f5-ns b db pa2 link dim dark-gray ba b--black-20'
+              className='f6 f5-ns fw4 b db pa2 link dim dark-gray ba b--black-20'
               to={`/tags/${kebabCase(tag.fieldValue)}/`}
             >
               {tag.fieldValue} ({tag.totalCount})
@@ -25,7 +26,7 @@ const TagsPage = ({
         ))}
       </ul>
     </section>
-  </div>
+  </Layout>
 )
 
 export default TagsPage

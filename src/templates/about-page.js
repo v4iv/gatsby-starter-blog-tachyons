@@ -5,6 +5,7 @@ import Helmet from 'react-helmet'
 import config from '../../data/config'
 import AboutPageTemplate from '../components/AboutPageTemplate'
 import { HTMLContent } from '../components/Content'
+import Layout from '../components/Layout'
 
 const AboutPage = ({ data }) => {
   const { markdownRemark: post } = data
@@ -63,7 +64,7 @@ const AboutPage = ({ data }) => {
   }
 
   return (
-    <div>
+    <Layout>
       <Helmet>
         <title>{post.frontmatter.meta_title}</title>
         <meta name='description' content={post.frontmatter.meta_description} />
@@ -81,7 +82,7 @@ const AboutPage = ({ data }) => {
         image={post.frontmatter.image}
         content={post.html}
       />
-    </div>
+    </Layout>
   )
 }
 
