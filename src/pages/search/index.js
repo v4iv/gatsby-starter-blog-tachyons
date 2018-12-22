@@ -14,7 +14,7 @@ const SearchPage = () => {
         <li className='dib'><Link className='f5 f4-ns link black db pv2 ph3 hover-light-green' to='/about'>About</Link>
         </li>
         <li className='dib'><Link className='f5 f4-ns link black db pv2 ph3 hover-light-yellow'
-                                  to='/contact'>Contact</Link>
+          to='/contact'>Contact</Link>
         </li>
         <li className='dib'><Link className='f5 f4-ns link black db pv2 ph3 hover-light-purple' to='/tags'>Tags</Link>
         </li>
